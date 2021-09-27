@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <script>
+      let valor = [];
+      let div1 = document.getElementById("div1");
+
+      for (i = 0; i < 1; i++) {
+        valor[0] = Number(prompt("Dime un valor"));
+        valor[1] = Number(prompt("Dime otro valor"));
+        valor[2] = Number(prompt("Dime un último valor"));
+
+        if (valor[0] < valor[1] && valor[0] < valor[2]) {
+          div1.innerHTML = `<p>El más pequeño de los 3 números introducidos es ${valor[0]}</p>`;
+        } else if (valor[1] < valor[0] && valor[1] < valor[2]) {
+          div1.innerHTML = `<p>El más grande de los 3 números introducidos es ${valor[1]}</p>`;
+        } else if (valor[2] < valor[0] && valor[2] < valor[1]) {
+          div1.innerHTML = `<p>El más pequeño de los 3 números introducidos es ${valor[2]}</p>`;
+        }
+      }
+
+      console.log(valor);
+    </script>
+  </body>
+</html>

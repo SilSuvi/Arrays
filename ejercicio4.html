@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <script>
+      let valores = [];
+
+      valores[0] = Number(prompt("Introduce un valor"));
+      valores[1] = Number(prompt("Introduce otro valor"));
+      valores[2] = Number(prompt("Introduce un último valor"));
+
+      for (let i = 0; valores.length < 3; i++) {
+        valores;
+      }
+
+      document.getElementById("div1").innerHTML = `<p>${valores}`;
+    </script>
+  </body>
+</html>

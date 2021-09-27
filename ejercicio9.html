@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <script>
+      let valores = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+
+      let eleccion = Number(prompt("Introduce un número del 0 al 9."));
+
+      let calculo = eleccion * 2;
+
+      document.getElementById("div1").innerHTML = `
+       <p>El valor de la posición ${eleccion} del array es de ${valores[eleccion]}</p>
+       `;
+
+      valores[eleccion] = calculo;
+
+      document.getElementById("div2").innerHTML = `
+        <p>El valor ahora modificado es de ${calculo}</p>
+
+        `;
+
+      console.log(valores);
+    </script>
+  </body>
+</html>
