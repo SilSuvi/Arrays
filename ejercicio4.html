@@ -21,6 +21,11 @@
       valores[7] = Number(prompt("Introduce valor"));
       valores[8] = Number(prompt("Introduce valor"));
       valores[9] = Number(prompt("Introduce valor"));
+      
+      /*
+      Fuera del bucle, el array no había sido definida y por lo tanto, si no la llamo en el bucle,
+      no aparecerá nada en pantalla porque consdiderará que la array es undefined.
+      */
 
       for (let i = 0; valores.length < 10; i++) {
         valores;
